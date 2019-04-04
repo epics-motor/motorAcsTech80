@@ -21,9 +21,10 @@ acsTech80_DBD += base.dbd
 # Include dbd files from all support applications:
 #ifdef ASYN
 acsTech80_DBD += asyn.dbd
+acsTech80_DBD += drvAsynIPPort.dbd
 #endif
 acsTech80_DBD += motorSupport.dbd
-acsTech80_DBD += devAcsTech80.dbd
+acsTech80_DBD += devSPiiPlus.dbd
 
 # Add all the support libraries needed by this IOC
 acsTech80_LIBS += acsTech80
