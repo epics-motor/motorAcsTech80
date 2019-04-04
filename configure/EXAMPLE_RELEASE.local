@@ -1,0 +1,4 @@
+MOTOR=
+-include $(MOTOR)/configure/RELEASE
+# path to motorAcsTech80 is needed to build the IOC inside motorAcsTech80, but outside motor
+MOTOR_ACSTECH80=

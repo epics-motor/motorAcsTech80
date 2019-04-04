@@ -5,6 +5,9 @@ include $(TOP)/configure/CONFIG
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 #=============================
 
+# The following are used for debugging messages.
+#!USR_CXXFLAGS += -DDEBUG
+
 #=============================
 # Build the IOC application
 
@@ -16,10 +19,21 @@ DBD += acsTech80.dbd
 acsTech80_DBD += base.dbd
 
 # Include dbd files from all support applications:
-#acsTech80_DBD += xxx.dbd
+#ifdef ASYN
+acsTech80_DBD += asyn.dbd
+#endif
+acsTech80_DBD += motorSupport.dbd
+acsTech80_DBD += devAcsTech80.dbd
 
 # Add all the support libraries needed by this IOC
-#acsTech80_LIBS += xxx
+acsTech80_LIBS += acsTech80
+acsTech80_LIBS += motor
+#ifdef ASYN
+acsTech80_LIBS += asyn
+#endif
+#ifdef SNCSEQ
+acsTech80_LIBS += seq pv
+#endif
 
 # acsTech80_registerRecordDeviceDriver.cpp derives from acsTech80.dbd
 acsTech80_SRCS += acsTech80_registerRecordDeviceDriver.cpp
