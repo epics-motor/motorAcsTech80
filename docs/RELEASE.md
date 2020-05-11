@@ -1,7 +1,22 @@
 # motorAcsTech80 Releases
 
+## __R1-0-1 (2020-05-11)__
+R1-0-1 is a release based on the master branch.  
+
+### Changes since R1-0
+
+#### New features
+* None
+
+#### Modifications to existing features
+* None
+
+#### Bug fixes
+* Commit [9fe15a2](https://github.com/epics-motor/motorAcsTech80/commit/9fe15a2860d09448c588e8f0fdfeb80280546d39): Include ``$(MOTOR)/modules/RELEASE.$(EPICS_HOST_ARCH).local`` instead of ``$(MOTOR)/configure/RELEASE``
+* Commit [f409282](https://github.com/epics-motor/motorAcsTech80/commit/f409282bba942564d891e83a46e486940e3e353e): Eliminated compiler warnings
+
 ## __R1-0 (2019-04-18)__
-R1-0 is a release based on the master branch.  
+R1-0 is a release based on the master branch.
 
 ### Changes since motor-6-11
 
