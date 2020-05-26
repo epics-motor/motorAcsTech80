@@ -1,6 +1,8 @@
 # motorAcsTech80
 EPICS motor drivers for the following [ACS Motion Control](https://www.acsmotioncontrol.com/) controllers: SPiiPlus
 
+[![Build Status](https://travis-ci.org/epics-motor/motorAcsTech80.png)](https://travis-ci.org/epics-motor/motorAcsTech80)
+
 motorAcsTech80 is a submodule of [motor](https://github.com/epics-modules/motor).  When motorAcsTech80 is built in the ``motor/modules`` directory, no manual configuration is needed.
 
 motorAcsTech80 can also be built outside of motor by copying it's ``EXAMPLE_RELEASE.local`` file to ``RELEASE.local`` and defining the paths to ``MOTOR`` and itself.
