@@ -1,7 +1,8 @@
 # motorAcsTech80
 EPICS motor drivers for the following [ACS Motion Control](https://www.acsmotioncontrol.com/) controllers: SPiiPlus
 
-[![Build Status](https://travis-ci.org/epics-motor/motorAcsTech80.png)](https://travis-ci.org/epics-motor/motorAcsTech80)
+[![Build Status](https://github.com/epics-motor/motorAcsTech80/actions/workflows/ci-scripts-build.yml/badge.svg)](https://github.com/epics-motor/motorAcsTech80/actions/workflows/ci-scripts-build.yml)
+<!--[![Build Status](https://travis-ci.org/epics-motor/motorAcsTech80.png)](https://travis-ci.org/epics-motor/motorAcsTech80)-->
 
 motorAcsTech80 is a submodule of [motor](https://github.com/epics-modules/motor).  When motorAcsTech80 is built in the ``motor/modules`` directory, no manual configuration is needed.
 
